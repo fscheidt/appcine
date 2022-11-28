@@ -5,6 +5,9 @@ Front-end em svelte para consumir dados do projeto pycine (fastapi).
 - [Página Web 4](https://github.com/fscheidt/web4-22)
 - [pycine (fastapi)](https://github.com/fscheidt/pycine)
 
+## Dependências
+- requer nodejs - [instalação](https://github.com/fscheidt/dev/blob/master/contents/nodejs.md)
+
 ## Clonar projeto
 
 ## Criar projeto
