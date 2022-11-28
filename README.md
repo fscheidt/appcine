@@ -10,6 +10,13 @@ Front-end em svelte para consumir dados do projeto pycine (fastapi).
 
 ## Clonar projeto
 
+```bash
+git clone https://github.com/fscheidt/appcine.git
+cd appcine
+npm install
+npm run dev
+```
+
 ## Criar projeto
 ```bash
 npm create vite@latest appcine -- --template svelte
