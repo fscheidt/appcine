@@ -17,15 +17,25 @@ function handleClick() {
 list movies
 </button>
 
+<!--
+    get from endpoint /genres
+    <select>
+        <option>Drama</option>
+    </select
+-->
+
 {#await promise}
-    <p>...waiting</p>
+<p>...waiting</p>
 {:then movies}
 
 <div class="table">
     {#each movies as m }
-        <p>{m.id}</p>
+        <p><img src="{m.poster_path}"/></p>
+        <!-- <p>{m.id}</p> -->
         <p>{m.title}</p>
-        <p>{m.genre}</p>
+        <p>{m.genres}</p>
+        <!-- TODO: salvar filme como favorito -->
+        <p>Save</p>
     {/each}
 </div>
 
@@ -36,7 +46,7 @@ list movies
 <style>
 .table{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr min-content;
     border: 1px solid #ccc;
     padding: 10px;
 }
