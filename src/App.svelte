@@ -1,6 +1,7 @@
 <script>
   import Movie from './lib/Movie.svelte'
   import User from './lib/User.svelte'
+  import Person from './lib/Person.svelte'
   let menu = 1;
 </script>
 
@@ -10,6 +11,7 @@
     <ul class="nav">
         <li><a href="/" on:click|preventDefault={() => (menu = 1)}>Users</a></li>
         <li><a href="/" on:click|preventDefault={() => (menu = 2)}>Movies</a></li>
+        <li><a href="/" on:click|preventDefault={() => (menu = 3)}>Artista</a></li>
     </ul>
 
     <div class="card">
@@ -17,6 +19,8 @@
         <User/>
     {:else if menu === 2}
         <Movie/>
+    {:else if menu === 3}
+        <Person/>
     {:else}
         <p>invalid option</p>
     {/if}

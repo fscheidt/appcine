@@ -16,6 +16,8 @@ async function sendForm(e){
 }
 </script>
 
+
+
 <h2>New user</h2>
 
 <p>{resposta}</p>
@@ -32,5 +34,9 @@ form.crud{
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
+    row-gap: 10px;
+}
+.crud input[type=submit]{
+    justify-self: baseline;
 }
 </style>
