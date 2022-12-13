@@ -21,9 +21,9 @@ async function sendForm(e){
 <p>{resposta}</p>
 
 <form class="crud" on:submit|preventDefault={sendForm}>
-    <input type="text" name="name" placeholder="User name">
-    <input type="text" name="email" placeholder="Email">
-    <input type="text" name="password" placeholder="password">
+    <input type="text" name="name" placeholder="User name" required autocomplete="off">
+    <input type="text" name="email" placeholder="Email" required autocomplete="off">
+    <input type="text" name="password" placeholder="password" required autocomplete="off">
     <input type="submit" value="add">
 </form>
 
