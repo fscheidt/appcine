@@ -1,15 +1,14 @@
 <script>
   import Movie from './lib/Movie.svelte'
+  import User from './lib/User.svelte'
 </script>
 
 <main>
   <p>Pycine App</p>
 
   <div class="card">
-    <Movie/>
+    <User/>
   </div>
-
-  <button>button</button>
 
 </main>
 
